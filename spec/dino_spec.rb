@@ -23,7 +23,7 @@ describe "Dinos" do
       raptors = ["gigantoraptor", "velociraptor ", "oviraptor", "utahraptor"]
       not_raptors = ["raptor", "raptorex", "aquaraptorville", "raptorsaurus"]
       raptors.each {|r| expect(match_raptor(r)).to eq(r)}
-      not_raptors.each {|not_r| expect(match_raptor(not_r)).to eq("#{not_r} is not a raptor")}
+      not_raptors.each {|not_r| expect(match_raptor(not_r)).to eq("#{not_r} isn't a raptor")}
     end
   end
 
@@ -32,9 +32,8 @@ describe "Dinos" do
       feathers = ["fancy plume", "it's fluff time", "quest for a quill", "all of the feathers"]
       not_feathers = ["plume fluff", "quill feather", "unrelated"]
       feathers.each {|f| expect(match_feather_like(f)).to eq(f)}
-      not_feathers.each {|not_f| expect(match_feather_like(not_f)).to eq("not feather like")}
+      not_feathers.each {|not_f| expect(match_feather_like(not_f)).to eq("no match found")}
     end
   end
-
 
 end

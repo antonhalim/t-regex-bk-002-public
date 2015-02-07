@@ -20,7 +20,7 @@ The Triceratops named Sara only eats plants whose names begin with the letter "c
 
 #### `match_raptor`
 
-Raptor species always end appropriately with the word "raptor" (ex. velociraptor). Create a regex that will match species names that end with "raptor" but will not match names that start with "raptor" ("raptorsaurus") or are only the word "raptor". If there is no match, the method should return "#{animal} isn't a raptor"
+Raptor species always end appropriately with the word "raptor" (ex. velociraptor). Create a regex that will match species names that end with "raptor" but will not match names that start with "raptor" ("raptorsaurus") or are only the word "raptor". If there is no match, the method should return "#{animal} isn't a raptor".
 
 #####  `match_feather_like`
 
