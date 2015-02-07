@@ -20,7 +20,7 @@ describe "Dinos" do
 
   describe "#match_raptor" do
     it "returns the species name if it ends with raptor, returns 'not a raptor' if not" do
-      raptors = ["gigantoraptor", "velociraptor ", "oviraptor", "utahraptor"]
+      raptors = ["gigantoraptor", "velociraptor", "oviraptor", "utahraptor"]
       not_raptors = ["raptor", "raptorex", "aquaraptorville", "raptorsaurus"]
       raptors.each {|r| expect(match_raptor(r)).to eq(r)}
       not_raptors.each {|not_r| expect(match_raptor(not_r)).to eq("#{not_r} isn't a raptor")}
@@ -30,7 +30,7 @@ describe "Dinos" do
   describe "#match_feather_like" do
     it "returns the species name if it ends with raptor, returns 'not a raptor' if not" do
       feathers = ["fancy plume", "it's fluff time", "quest for a quill", "all of the feathers"]
-      not_feathers = ["plume fluff", "quill feather", "unrelated"]
+      not_feathers = ["quil", "plum", "birds", "birdy", "fluf", "feath"]
       feathers.each {|f| expect(match_feather_like(f)).to eq(f)}
       not_feathers.each {|not_f| expect(match_feather_like(not_f)).to eq("no match found")}
     end

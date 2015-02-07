@@ -1,15 +1,15 @@
 def is_dinosaur?(animal)
-  # code here
+  !!(/saur/ =~ animal)
 end
 
 def will_sara_eat_it?(plant)
-  # code here
+  !!(/\bc/i =~ plant)
 end
 
 def match_raptor(animal)
-  # code here
+  /.raptor$/.match(animal) ? animal : "#{animal} isn't a raptor"
 end
 
 def match_feather_like(phrase)
-  # code here
+  /plume|quill|feather|fluff/.match(phrase) ? phrase : "no match found"
 end

@@ -28,7 +28,7 @@ Most renderings of dinosaurs, for example [Jurassic Park](http://en.wikipedia.or
 However, a [recent study](http://news.nationalgeographic.com/news/2014/07/140724-feathered-siberia-dinosaur-scales-science/) suggested that almost every dinosaur was covered in feathers instead.
 Create a method that will match all phrases that contain the word feather, quill, fluff, *or* plume. 
 
-So it would match "all of the feathers" but not "quill fluff". If there is no match, it should return "no match found".
+So it would match "all of the feathers" but not "birds birds birds". If there is no match, it should return "no match found".
 
 ## Resources
 
