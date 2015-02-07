@@ -10,7 +10,7 @@ resources: 2
 
 ## Instructions
 
-#### `is_dinosaur?`
+##### `is_dinosaur?`
 
 Make a regex that says whether a species has the string "saur" anywhere within it. For intance, it should return true for "branchiosaurus" and false for "triceratops".
 
@@ -18,7 +18,7 @@ Make a regex that says whether a species has the string "saur" anywhere within i
 
 The Triceratops named Sara only eats plants whose names begin with the letter "c", either uppercase or lowercase. If the method is given "Cycad" it should return true, if it's given "archaefrutus", it should return false.
 
-#### `match_raptor`
+##### `match_raptor`
 
 Raptor species always end appropriately with the word "raptor" (ex. velociraptor). Create a regex that will match species names that end with "raptor" but will not match names that start with "raptor" ("raptorsaurus") or are only the word "raptor". If there is no match, the method should return "#{animal} isn't a raptor".
 
