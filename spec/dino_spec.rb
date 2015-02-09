@@ -10,7 +10,7 @@ describe "Dinos" do
   end
   
   describe "#will_sara_eat_it?" do
-    it "returns the species name if it ends with raptor, returns 'not a raptor' if not" do
+    it "returns true if the word starts with 'c' or 'C', false if not" do
       eats = ["Cycad", "conifer", "Cactus", "cana palm", "Camellia"]
       doesnt_eat = ["Fern", "magnolia", "Archaefrutus", "eudicots", "Archaefructus liaoningensis"]
       eats.each {|e| expect(will_sara_eat_it?(e)).to eq(true)}
@@ -28,7 +28,7 @@ describe "Dinos" do
   end
 
   describe "#match_feather_like" do
-    it "returns the species name if it ends with raptor, returns 'not a raptor' if not" do
+    it "returns the word if it matches 'quill', 'plume', 'feather', or 'fluff', else returns 'no match found'" do
       feathers = ["fancy plume", "it's fluff time", "quest for a quill", "all of the feathers"]
       not_feathers = ["quil", "plum", "birds", "birdy", "fluf", "feath"]
       feathers.each {|f| expect(match_feather_like(f)).to eq(f)}
